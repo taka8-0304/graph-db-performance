@@ -4,8 +4,6 @@ import java.util.Map;
 import java.util.function.Consumer;
 
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import model.Entity;
 import model.EntityKey;
@@ -14,8 +12,6 @@ import model.RelationKey;
 import model.Repository;
 
 public class Neo4jRepositoryTest {
-
-	private static final Logger logger = LoggerFactory.getLogger(Neo4jRepositoryTest.class);
 
 	@Test
 	public void testAddEntity() {

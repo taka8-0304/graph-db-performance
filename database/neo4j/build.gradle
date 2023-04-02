@@ -7,9 +7,6 @@ plugins {
 dependencies {
 	implementation project(':graph-db-performance-core')
 	implementation group: 'org.neo4j.driver', name: 'neo4j-java-driver', version: '5.6.0'
-	api group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
-	api group: 'io.micrometer', name: 'micrometer-core', version: '1.10.5'		
-	api group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.2'
 	testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '[1.4,1.5)'
 	testImplementation group: 'ch.qos.logback', name: 'logback-core', version: '[1.4,1.5)'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '[5.0,6.0)'
