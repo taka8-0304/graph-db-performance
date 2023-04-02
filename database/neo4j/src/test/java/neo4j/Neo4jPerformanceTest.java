@@ -7,14 +7,20 @@ import org.slf4j.LoggerFactory;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 import model.Scenario;
 import scenario.AddEntityScenario;
+import scenario.AddRelationScenario;
 
 public class Neo4jPerformanceTest {
 
 	private static final Logger logger = LoggerFactory.getLogger(Neo4jPerformanceTest.class);
-
+	
 	@Test
 	public void addEntity() {
 		this.test(new AddEntityScenario(10, 1));
+	}
+
+	@Test
+	public void addRelation() {
+		this.test(new AddRelationScenario(10, 1));
 	}
 
 	private void test(Scenario scenario) {
