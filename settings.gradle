@@ -16,6 +16,8 @@ dependencyResolutionManagement {
 	}
 }
 
+includeBuild('./gradle-plugin')
+
 rootProject.name = 'graph-db-performance'
 
 def targets = [

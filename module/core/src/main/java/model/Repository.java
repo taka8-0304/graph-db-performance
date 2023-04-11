@@ -1,13 +1,13 @@
 package model;
 
-import java.util.function.Consumer;
-
 public interface Repository {
 
-	interface Session extends Updater, AutoCloseable {
+	interface Session extends AutoCloseable {
 
-		default void execute(Consumer<Updater> operation) {
-		}
+
+		void addEntity(Entity entity);
+
+		void addRelation(Relation relation);
 
 		@Override
 		void close();

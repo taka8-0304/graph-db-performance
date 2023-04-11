@@ -1,11 +1,8 @@
 plugins {
-	id 'java'
-	id 'java-library'
-	id 'eclipse'
+	id 'my-java-library'
 }
 
 dependencies {
 	api group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
 	api group: 'io.micrometer', name: 'micrometer-core', version: '1.10.5'		
-	api group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.2'
 }
