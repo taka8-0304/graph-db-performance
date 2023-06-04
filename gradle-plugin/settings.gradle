@@ -5,3 +5,5 @@ pluginManagement {
 		gradlePluginPortal()
 	}
 }
+
+rootProject.name = 'graph-db-performance-gradle-plugin'

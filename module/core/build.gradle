@@ -5,4 +5,5 @@ plugins {
 dependencies {
 	api group: 'org.slf4j', name: 'slf4j-api', version: '2.0.7'
 	api group: 'io.micrometer', name: 'micrometer-core', version: '1.10.5'		
+	api group: 'org.apache.tinkerpop', name: 'gremlin-core', version: '3.6.3'
 }
